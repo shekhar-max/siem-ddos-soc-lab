@@ -77,3 +77,6 @@ The initial pfSense firewall pass rule limited the accepted traffic **Source** p
 
 ### The Fix
 The firewall configuration was refactored by toggling the accepted packet **Source** criteria to **`Any`**. Because this policy is applied exclusively to physical connections coming through the hardware bounds of the isolated **ATTACKER** interface, it remains secure while allowing the firewall to properly pass spoofed public headers into the DMZ layer.
+
+
+
