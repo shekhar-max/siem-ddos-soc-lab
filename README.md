@@ -38,13 +38,13 @@ From the Kali Linux terminal in the `ATTACKER` zone, a multi-threaded TCP SYN fl
 
 ```bash
 sudo hping3 -S --flood --rand-source -p 80 192.168.20.100
-<img width="800" height="427" alt="Screenshot 2026-08-31 151251" src="https://github.com/user-attachments/assets/00070ee3-32c9-4cbc-bf29-37b0633d32b6" />
-
 
 ```
 *   `-S`: Floods structured TCP SYN packets to hang the target's connection state tables.
 *   `--flood`: Dispatches packets at the maximum raw physical capacity of the virtual link.
 *   `--rand-source`: Mandates the packet crafter to randomize public source IP addresses (e.g., `222.36.160.105`), effectively transforming a single-host DoS into a highly distributed footprint.
+
+<img width="800" height="427" alt="Screenshot 2026-08-31 151251" src="https://github.com/user-attachments/assets/9dec9881-0810-4fce-bc70-178ed5073eb2" />
 
 ---
 
